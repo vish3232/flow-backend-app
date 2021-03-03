@@ -30,7 +30,7 @@ app.use('/blog', require('./Routes/Blog'))
 app.use('/paymentTrack',require('./Routes/Payment'))
 app.use('/payment',require('./Routes/Instamoho'))
 app.use("/emailOtp",require('./Routes/verify'))
-const port=process.env.PORT || 5000
+const port=process.env.PORT || 8080
 app.listen(port, () => {
     console.log('Running on port 8080')
 })
